@@ -1,0 +1,91 @@
+body{
+	background-image:url('c://users/katherine/desktop/dbc/kdmcclin.github.io/unit1_projects/images/dagmix.jpg');
+}
+
+a{
+	color: #4FB69F;
+	text-decoration: none;
+}
+
+#container{
+	margin: 0 auto;
+	width: 1000px;
+	background: #fff;
+}
+
+#header{
+	background: #fffff;
+	padding: 20px;
+}
+
+#header h1{
+	margin: 0;
+}
+
+#navigation{
+	float: left;
+	width: 1000px;
+	background: #41c14a;
+}
+
+#navigation ul{
+	margin: 0;
+	padding: 0;
+}
+
+#navigation ul li{
+	list-style-type: none;
+	display: inline;
+}
+
+#navigation li a{
+	display: block;
+	float: left;
+	padding: 5px 10px;
+	color: #ffffff;
+	text-decoration: none;
+	border-right: 1px solid #ffffff;
+}
+
+#navigation li a:hover{
+	background: #5f9ea0;
+}
+
+#content-container{
+	float: left;
+	width: 1000px;
+	background: #ffffff;
+}
+
+#content{
+	float: left;
+	width: 800px;
+	padding: 20px 0;
+	margin: 0 200 0 30;
+	text-align: center;
+}
+
+#content h2{ 
+	margin: 0; 
+}
+
+#aside{
+	float: left;
+	width: 200px;
+	padding: 20px 0;
+	margin: 0 0 0 0;
+	display: inline;
+}
+
+#aside h3{
+	margin: 0;
+}
+
+#footer
+{
+	clear: left;
+	background: #41c14a;
+	text-align: right;
+	padding: 1px;
+	height: 1%;
+}
