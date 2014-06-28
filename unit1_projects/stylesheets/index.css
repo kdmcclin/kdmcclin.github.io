@@ -3,8 +3,12 @@ body{
 }
 
 a{
-	color: #4FB69F;
+	color: #cc0000;
 	text-decoration: none;
+}
+
+a:hover{
+	color: #5f9ea0;
 }
 
 #container{
