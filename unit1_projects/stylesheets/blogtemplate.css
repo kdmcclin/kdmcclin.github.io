@@ -11,6 +11,14 @@ p{
 	text-align: left;
 }
 
+blockquote{
+	border-left: 2px solid #41c14a;
+}
+
+blockquote p{
+	padding-left: 7px;
+}
+
 a:hover{
 	color: #5f9ea0;
 }
@@ -75,6 +83,11 @@ a:hover{
 
 #content h2{ 
 	margin: 0; 
+}
+
+#sources{
+	text-align: left;
+	padding-bottom: 5px;
 }
 
 #aside{
