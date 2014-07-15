@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta http-equiv="Content Type" content="text/html; charset=utf-8"/>
-  <title>Why JavaScript?</title>
+  <title>A Basic Guide to Arrays and Hashes</title>
   <link rel="stylesheet" href="../unit1_projects/stylesheets/blogtemplate.css" type="text/css" media="screen">
 </head>
 <body>
@@ -19,21 +19,23 @@
 	</div>
 	<div id="content-container">
 		<div id="content">
-			<h2>Why JavaScript?</h2>
-			<h4>Explaining the popularity of JavaScript in web development.</h4>
-			<div id="dominance">
-				<h3>Technological Evolution</h3>
-				<img src="../unit1_projects/images/tablets.png" alt="Tablet Options">
-				<p>JavaScript is popular in web development in large part due to its ability to keep up with technological change.  Technological change has been happening at an ever increasing pace.  While people may grumble that their iPhone is obsolete when a new version comes out less than two years later, people are no longer willing to wait for software and web-related updates.  Whether something is wrong, broken, or could just use improvement, people expect updates in a matter of hours, days, or weeks, but no longer.  Where web development is concerned, JavaScript allows developers to quickly put together updates and new applications as the market demands.  This is one of its major strengths.</p>
-			</div>
-			<div id="strengths">
-				<h3>Strengths</h3>
-				<p>JavaScript has a number of other strengths.  It's quick to learn compared to many other languages.  It's run client-side, which means that it takes advantage of the user's processor instead of straining the web server with tons of requests to run that script (or scripts).  This makes it both quick and easy on the server.</p>
-			</div>
-			<div id="weaknesses">
-				<h3>Weaknesses</h3>
-				<p>Despite these strenghts, JavaScript still has some weaknesses.  Like anything related to technology, it has security issues.  Its strength of running client-side (on the user's computer) means that it can be used (via the insertion of malicious code) to manipulate the user's computer.  JavaScript is also interpreted differently by different browsers, particularly Internet Explorer.  If developers don't take this into consideration then users might find the lack of functionality a turn off to using the entire site.</p>
-			</div>
+			<h2>A Basic Guide to Arrays and Hashes</h2>
+			<h4>What are they and when do I use them?</h4>
+				<p>Arrays and hashes are two ways that Ruby has of collecting and storing data. This blog post will examine them individual and provide some guidance about deciding which one to use.</p>
+			<h4>Arrays</h4>
+				<p>Arrays are used to store a list of values, whether numbers or not.  Each element in the array has what is called an index, which functions as a key to that particular element.  The first element is assigned: 0, the next: 1, and so on.</p>
+				<img src="blog-images/vegetablearray.png" alt="Vegetable Array">
+				<p>You can create an array using literal notation, used above, and array constructor notation, demonstrated below.</p>
+				<img src="blog-images/arrayconstructor.png" alt="Array Constructor">
+			<h4>Hashes</h4>
+				<p>A hash is a collection of key-value pairs.  Each key is unique and is associated with a value.  These values can be repeated so that different keys share the same value, but keys cannot be duplicated.</p>
+				<img src="blog-images/vegetablehash.png" alt="Vegetable Hash">
+				<p>The two most common ways of constructing hashes are hash literal notation, used above, and hash constructor notation, demonstrated below.</p>
+				<img src="blog-images/hashconstructor.png" alt="Hash Constructor">
+			<h4>How to Choose</h4>
+				<p>Arrays are good for storing values when the key is not important.  It's also more efficient to access array elements.  Hashes on the other hand are a bit more flexible.  The deciding factor in determining which one to use is to figure out if your data needs two specific values bound together (as in hashes), or if just a list of values is fine (as in arrays.)</p>
+				<img src="blog-images/grades1.png" alt="Grades Array and Hash">
+				<p>Hashes and arrays can be used in a much more complex manner than discussed here, but hopefully this has been a useful introduction into how to use the two.</p>
 		</div>
 		<div id="aside">
 			<h3>Other Blog Posts</h3>
@@ -49,11 +51,11 @@
 			<h4>Week 3</h4>
 			<ul>
 				<li><a href="week3_cultural.html">Being Abstract Sequential</a></li>
+				<li><a href="week3_technical.html">Why JavaScript?</a></li>
 			</ul>
 			<h4>Week 4</h4>
 			<ul>
 				<li><a href="week4_cultural.html">Representation Matters</a></li>
-				<li><a href="week4_technical.html">A Basic Guide to Arrays and Hashes</a></li>
 			</ul>
 		</div>
 		<div id="footer">
