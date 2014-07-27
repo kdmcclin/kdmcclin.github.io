@@ -11,6 +11,12 @@ a:hover{
 	color: #5f9ea0;
 }
 
+#welcome{
+	text-align: left;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 19px;
+}
+
 #container{
 	margin: 0 auto;
 	width: 1000px;
