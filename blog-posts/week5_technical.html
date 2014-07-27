@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content Type" content="text/html; charset=utf-8"/>
+  <title>A Class Act</title>
+  <link rel="stylesheet" href="../unit1_projects/stylesheets/blogtemplate.css" type="text/css" media="screen">
+</head>
+<body>
+	<div id="container">
+	<div id="header">
+		<h1>Now here's what I think.</h1>
+	</div>
+	<div id="navigation">
+		<ul>
+			<li><a href="http://kdmcclin.github.io/">Home</a></li>
+			<li><a href="http://kdmcclin.github.io/aboutme.html">About Me</a></li>
+			<li><a href="http://weavesilk.com/">Link of the Week</a></li>
+		</ul>
+	</div>
+	<div id="content-container">
+		<div id="content">
+			<h2>A Class Act</h2>
+			<h4>A Basic Guide on Classes and When and How to Use Them</h4>
+			<p>A class is a Ruby object that lets you package up methods and variables so that you can easily create new objects and call those methods on the new objects without repeating yourself for each new object.  You can think of a class as a sort of factory for objects, churning out multiple instances of the class and then applying to them whatever methods you've created.</p>
+			<p>Before I go too far with definitions and descriptions, I'm going to introduce a possible scenario in which you would want to use a class.  Fair warning: these examples may contain spoilers for A Song of Ice and Fire (ASOIAF).</p>
+			<img src="http://keithroysdon.files.wordpress.com/2013/04/spoiler-warning-iron-man-3.jpg" alt="Spoiler Chimp">
+			<h4>Creating a Class</h4>
+			<p>If there's one thing that the ASOIAF books have a lot of (besides death), it's characters.  From major players to cameo appearances, there's a lot to keep track of.  Creating a class that would allow you to input some information about the character and get a brief report about them would be a great way to remember them.  When creating classes (or pretty much anything else in Ruby) you want to give your class a clear name that's relevant to what it contains.  Let's call our class "Character."</p>
+			<img src="blog-images/class1.png" alt="Class Defined">
+			<p>There we go, we've created our new class.  What next?</p>
+			<h4>Filling Out Your Class</h4>
+			<p>Now we need to create something within the class.  Because our goal in the end is to create new character objects, and we're going to want each character to be created with a few key pieces of information, we're going to use the initialize method.  This will enable the automatic intialization that we're after.  Our method will take four pieces of information about the character: name, house, alias, and a rumor about them.</p>
+			<img src="blog-images/class2.png" alt="Initialize Method">
+			<p>Woah.  What are those weird @ symbols doing there?  They've got equal signs after them so they look sort of like variables.  Well, they are.  Unlike local variables though, these are called <b>instance variables</b>.  Instance variables are applied to every instance of the class, and can be used by any method in that class.  If we had twenty methods in our Character class and they all used the @name variable, it would use the same name to output whatever the method asked.  Otherwise we'd have to define name every single time.</p>
+			<p><b>NOTE:</b> It's worth mentioning here that alias is a reserved word in Ruby, so I used aka (also known as) for our character's alias information.</p>
+			<h4>Setting Up Our Report</h4>
+			<p>Now we want to create a simple method within the class that will generate a brief report based on each character's information when we call the method.</p>
+			<img src="blog-images/class3.png" alt="Report Method">
+			<p>This report method, along with our earlier intialization method, are what are called <b>instance methods</b>.  Just like instance variables, they work with instances of a class.  In each instance where we create a character, that character's information will be set to the instance variables because of the initialize method, and we'll get a report when we call the report method on that character.</p>
+			<h4>Creating New Instances</h4>
+			<p>It's time to create a few new characters, which will be instances of our Character class.  While there are certainly plenty to choose from, for the purposes of this explanation I've chosen four.</p>
+			<img src="blog-images/class4.png" alt="New Characters">
+			<p>We set jon_snow equal to a new character with a name, a house, an alias (or aka), and a rumor.  The same treatment is given to aegon_targaryen, asha_greyjoy, and sarella_sand.</p>
+			<h4>Generating our Report</h4>
+			<p>All that's left is to call our report method so we can see the brief report on these characters.  Here's what our code looks like, and what it puts out.</p>
+			<img src="blog-images/class5.png" alt="Full Code">
+			<img src="blog-images/class6.png" alt="Report">
+			<h4>So why classes?</h4>
+			<p>Just imagine how much more work that would have been if we'd written a separate series of variables and methods for each character.  Now if we want to increase our ASOIAF character series we don't have to write more variables and methods, we just have to create a new instance of Character and pass it a few pieces of information.  Bet we can do 'em all before <u>The Winds of Winter</u> is published.</p>
+		</div>
+		<div id="aside">
+			<h3>Other Blog Posts</h3>
+			<h4>Week 1</h4>
+			<ul>
+				<li><a href="http://kdmcclin.github.io/blog-posts/week1_cultural.html">To Boldly Go</a></li>
+				<li><a href="http://kdmcclin.github.io/blog-posts/week1_technical.html">Evaluating Websites</a></li>
+			</ul>
+			<h4>Week 2</h4>
+			<ul>
+				<li><a href="http://kdmcclin.github.io/blog-posts/week2_technical.html">Keep Calm and Give Me Space</a></li>
+			</ul>
+			<h4>Week 3</h4>
+			<ul>
+				<li><a href="week3_cultural.html">Being Abstract Sequential</a></li>
+				<li><a href="week3_technical.html">Why JavaScript?</a></li>
+			</ul>
+			<h4>Week 4</h4>
+			<ul>
+				<li><a href="week4_cultural.html">Representation Matters</a></li>
+				<li><a href="week4_technical.html">A Basic Guide to Arrays and Hashes</a></li>
+			</ul>
+			<h4>Week 5</h4>
+			<ul>
+				<li><a href="week5_cultural.html">Pairing and Feedback in Phase 0</a</li>
+			</ul>
+		</div>
+		<div id="footer">
+			<div id="logos">
+			    <a href="https://www.facebook.com/kath3rine" target="_blank" class="logo facebook"><img src="../unit1_projects/images/facebookgray.gif" title="My Facebook" alt="Facebook logo"></a>
+			    <a href="https://github.com/kdmcclin" target="_blank" class="logo github"><img src="../unit1_projects/images/githubgray.gif" alt="GitHub logo" title="My GitHub"></a>
+			    <a href="https://plus.google.com/u/0/102827255318006940193/" target="_blank" class="logo googleplus"><img src="../unit1_projects/images/google+gray.gif" alt="Google+ logo" title="My Google+"></a>
+			    <a href="https://www.linkedin.com/in/kdmcclin" target="_blank" class="logo linkedin"><img src="../unit1_projects/images/linkedingray.gif" alt="Linkedin logo" title="My Linkedin"></a>      
+      		</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
