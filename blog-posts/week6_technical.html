@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta http-equiv="Content Type" content="text/html; charset=utf-8"/>
-  <title>A Basic Guide to Arrays and Hashes</title>
+  <title>Class Methods</title>
   <link rel="stylesheet" href="../unit1_projects/stylesheets/blogtemplate.css" type="text/css" media="screen">
 </head>
 <body>
@@ -19,23 +19,22 @@
 	</div>
 	<div id="content-container">
 		<div id="content">
-			<h2>A Basic Guide to Arrays and Hashes</h2>
-			<h4>What are they and when do I use them?</h4>
-				<p>Arrays and hashes are two ways that Ruby has of collecting and storing data. This blog post will examine them individual and provide some guidance about deciding which one to use.</p>
-			<h4>Arrays</h4>
-				<p>Arrays are used to store a list of values, whether numbers or not.  Each element in the array has what is called an index, which functions as a key to that particular element.  The first element is assigned: 0, the next: 1, and so on.</p>
-				<img src="blog-images/vegetablearray.png" alt="Vegetable Array">
-				<p>You can create an array using literal notation, used above, and array constructor notation, demonstrated below.</p>
-				<img src="blog-images/arrayconstructor.png" alt="Array Constructor">
-			<h4>Hashes</h4>
-				<p>A hash is a collection of key-value pairs.  Each key is unique and is associated with a value.  These values can be repeated so that different keys share the same value, but keys cannot be duplicated.</p>
-				<img src="blog-images/vegetablehash.png" alt="Vegetable Hash">
-				<p>The two most common ways of constructing hashes are hash literal notation, used above, and hash constructor notation, demonstrated below.</p>
-				<img src="blog-images/hashconstructor.png" alt="Hash Constructor">
-			<h4>How to Choose</h4>
-				<p>Arrays are good for storing values when the key is not important.  It's also more efficient to access array elements.  Hashes on the other hand are a bit more flexible.  The deciding factor in determining which one to use is to figure out if your data needs two specific values bound together (as in hashes), or if just a list of values is fine (as in arrays.)</p>
-				<img src="blog-images/grades1.png" alt="Grades Array and Hash">
-				<p>Hashes and arrays can be used in a much more complex manner than discussed here, but hopefully this has been a useful introduction into how to use the two.</p>
+			<h2>Class Methods</h2>
+			<h4>What are they and when should I use them?</h4>
+				<p>To put it simply, class methods are methods that are called on a particular class, unlike instance methods that are called on an instance of a class.  Let's take a look at my <a href="week5_technical.html">post</a> last week on classes and when to use them. </p>
+			<h4>Class vs. Instance Methods</h4>
+				<img src="blog-images/class3.png" alt="Character Class Code">
+				<p>There are no class methods present in the Character class above.  The initialize method and the report method are both called on an instance of Character, not on Character in general.  Let's see what happens when I try to call report directly on Character.</p>
+				<img src="blog-images/class7-1.png" alt="Character Class Code">
+				<img src="blog-images/class7-2.png" alt="Character Class Code">
+				<p>It gives an error message because there's no report method for the class.  If I call the method on an instance of the class though, as seen in last week's post, then it works fine because I'm calling it on an instance, not the class itself.</p>
+			<h4>Creating Class Methods</h4>
+				<p>The clearest way (but not the only way) that you can create a class method is by using self in the definition.</p>
+				<img src="blog-images/class8-1.png" alt="Character Class Code">
+				<img src="blog-images/class8-2.png" alt="Character Class Code">
+				<p>With a bit of simple code like this the clarity is not strictly necessary, but when you or someone else is looking at more complicated code it is helpful to have this class method clearly stated to avoid confusion with instance methods.</p>
+			<h4>When to Use Them</h4>
+				<p>Though how they're written and what they apply to may differ, class methods are called just like any other methods.  They're useful for any situation where instance methods would not be possible or would not be better.  Class methods can get in the way of object-oriented programming by making things more procedural, but they do have their place, making code shorter and creating fewer objects.  Rather like rich food a class method should be enjoyed sparingly when you just have to have it.</p>
 		</div>
 		<div id="aside">
 			<h3>Other Blog Posts</h3>
@@ -56,16 +55,16 @@
 			<h4>Week 4</h4>
 			<ul>
 				<li><a href="week4_cultural.html">Representation Matters</a></li>
+				<li><a href="week4_technical.html">A Basic Guide to Arrays and Hashes</a></li>
 			</ul>
 			<h4>Week 5</h4>
 			<ul>
-				<li><a href="week5_cultural.html">Pairing and Feedback in Phase 0</a></li>
 				<li><a href="week5_technical.html">A Class Act</a></li>
+				<li><a href="week5_cultural.html">Pairing and Feedback in Phase 0</a></li>
 			</ul>
 			<h4>Week 6</h4>
 			<ul>
 				<li><a href="week6_cultural.html">Stereotype Threat</a></li>
-				<li><a href="week6_technical.html">Class Methods</a></li>
 			</ul>
 		</div>
 		<div id="footer">
