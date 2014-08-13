@@ -17,6 +17,12 @@ a:hover{
 	font-size: 19px;
 }
 
+#cheat_sheet{
+	text-align: left;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 19px;
+}
+
 #container{
 	margin: 0 auto;
 	width: 1000px;
