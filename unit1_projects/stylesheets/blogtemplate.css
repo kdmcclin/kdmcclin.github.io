@@ -47,7 +47,7 @@ a:hover{
 #navigation{
 	float: left;
 	width: 1000px;
-	background: #41c14a;
+	background: #27732C;
 }
 
 #navigation ul{
@@ -111,7 +111,7 @@ a:hover{
 #footer
 {
 	clear: left;
-	background: #41c14a;
+	background: #27732C;
 	text-align: right;
 	padding: 1px;
 	height: 1%;
