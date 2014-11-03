@@ -44,6 +44,7 @@ a:hover{
 }
 
 #navigation ul li{
+	font-size: 1.1em;
 	list-style-type: none;
 	display: inline;
 }
@@ -101,9 +102,9 @@ a:hover{
 	height: 1%;
 }
 
-ul li {
+/*ul li {
 	list-style-type: none;
-}
+}*/
 
 #blog{
 	text-align: left;
@@ -112,4 +113,8 @@ ul li {
 
 #blog h2{
 	text-align: center;
+}
+
+#blog a {
+	font-size: 1.1em;
 }
