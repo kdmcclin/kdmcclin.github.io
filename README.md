@@ -1,4 +1,4 @@
 kdmcclin.github.io
 ==================
 
-My DBC Phase 0 github pages site.
+My website.  Like me, it is forever a work in progress.
