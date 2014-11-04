@@ -1,6 +1,7 @@
 body{
 	background-image: url('../images/stressed_linen_@2X.png');
-	font-family: 'Calibri', sans-serif;
+	font-family: "PT Serif", serif;
+	font-size: 1.05em;
 }
 
 a{
@@ -45,7 +46,6 @@ a:hover{
 }
 
 #navigation ul li{
-	font-size: 1.1em;
 	list-style-type: none;
 	display: inline;
 }
