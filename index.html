@@ -1,44 +1,322 @@
 <!DOCTYPE html>
-<html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head>
-  <meta http-equiv="Content Type" content="text/html; charset=utf-8"/>
-  <title>Katherine McClintic Web Development</title>
-  <link rel="stylesheet" href="unit1_projects/stylesheets/index.css" type="text/css" media="screen">
-  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
-</head>
+    <title>Katherine McClintic Web Development</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A little bit of me, a little bit of my work.">
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <!-- github acitivity css -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+</head> 
+
 <body>
-  <div id="container">
-  <div id="header">
-    <img src="unit1_projects/images/jeffersonmemorial4.png" alt="Jefferson Memorial">
-  </div>
-  <div id="navigation">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="aboutme.html">About Me</a></li>
-      <li><a href="blog_central.html">Blog</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="http://dougaitkenthesource.com/" target="_blank">Link of the Month</a></li>
-    </ul>
-  </div>
-  <div id="content-container">
-    <div id="content">
-      <h2>Welcome!</h2>
-      <div id="welcome">
-        <p>My name is Katherine McClintic and this site will detail my journey into web development.  I attended the August 25, 2014 New York City cohort of <a href="http://devbootcamp.com/" target="_blank">Dev Bootcamp</a>.  At the end of October (2014) I completed the 19-week intensive web development training, consisting of 9 weeks of online instruction, followed by 10 weeks of onsite instruction.  The projects that I have worked on are linked in the navigation bar above.  My blog posts for Phase 0 of Dev Bootcamp are also located in the nav bar.  You can contact me through the social media icons located below, as well as my e-mail listed on my About Me page above.  I look forward to sharing more in the future, but in the meantime please enjoy this slightly humorous image.</p>
-      </div>
-      <IMG SRC="http://media-cache-ec0.pinimg.com/736x/be/91/3c/be913c696b8a93b5520dc6f283c6e486.jpg" alt="Tools">
-    </div>
-    <div id="aside">
-    </div>
-    <div id="footer">
-      <div id="logos">
-        <a href="https://www.facebook.com/kath3rine" target="_blank" class="logo facebook"><img src="unit1_projects/images/facebookgray.gif" title="My Facebook" alt="Facebook logo"></a>
-        <a href="https://github.com/kdmcclin" target="_blank" class="logo github"><img src="unit1_projects/images/githubgray.gif" alt="GitHub logo" title="My GitHub"></a>
-        <a href="https://plus.google.com/u/0/102827255318006940193/" target="_blank" class="logo googleplus"><img src="unit1_projects/images/google+gray.gif" alt="Google+ logo" title="My Google+"></a>
-        <a href="https://www.linkedin.com/in/kdmcclin" target="_blank" class="logo linkedin"><img src="unit1_projects/images/linkedingray.gif" alt="Linkedin logo" title="My Linkedin"></a>      
-      </div>
-    </div>
-  </div>
-</div>
+    <!-- ******HEADER****** --> 
+    <header class="header">
+        <div class="container">                       
+            <img class="profile-image img-responsive pull-left" src="assets/images/me.jpg" alt="Katherine McClintic" />
+            <div class="profile-content pull-left">
+                <h1 class="name">Katherine McClintic</h1>
+                <h2 class="desc">Web Developer</h2>   
+                <ul class="social list-inline">                 
+                    <li><a href="https://plus.google.com/u/0/102827255318006940193/"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/kdmcclin"><i class="fa fa-linkedin"></i></a></li>
+                    <li class="last-item"><a href="https://github.com/kdmcclin"><i class="fa fa-github-alt"></i></a></li>            
+                </ul> 
+            </div><!--//profile-->
+            <a class="btn btn-cta-primary pull-right" href="mailto:kdmcclin@gmail.com?Subject=Hello" target="_top"><i class="fa fa-paper-plane"></i> Email Me</a>              
+        </div><!--//container-->
+    </header><!--//header-->
+    
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-md-8 col-sm-12 col-xs-12">
+                <section class="about section">
+                    <div class="section-inner">
+                        <h2 class="heading">About Me</h2>
+                        <div class="content">
+                        		<h4>Where I'm From</h4>
+                        		<p>I'm a proud native of Washington, DC.  Yes, some of us are actually from here.</p>
+                        		<h4>Becoming a Developer</h4>
+                            <p>My career background, brief though it has been, is in education and the humanities. I received my Master's in Secondary Education (Social Studies) in the summer of 2013, but the lack of career options and a lifelong interest in and aptitude for technology lead me to Dev Bootcamp. At the end of October (2014) I completed the 19-week intensive web development training, consisting of 9 weeks of online instruction, followed by 10 weeks of onsite instruction.</p>      
+										        <h4>Hobbies</h4>
+										        <p>I was a fencer in my undergraduate years, but due to an injury and lack of time to devote to it I haven't fenced much lately. Luckily fencing is easy to pursue at any stage of life.</p>
+										        <p>The reason why it's so hard to find images of myself to use is that I'm usually the one taking the pictures. Another hobby of mine is photography. I took the following photo on a trip to Nova Scotia in the summer of 2011 and it's one of my favorites.</p>
+										        <img class="img-responsive project-image" src="assets/images/whalensbig.jpg" alt="Whale" />
+										        <br>
+										        <p>I also love music. Singing it, listening to it, playing it--I like it all. Unfortunately I don't know how to play too many musical instruments (or at least how to play them well).</p>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+    
+               <section class="latest section">
+                    <div class="section-inner">
+                        <h2 class="heading">Latest Projects</h2>
+                        <div class="content">
+                            <div class="item featured text-center">
+                                <h3 class="title"><a href="http://thepalate.herokuapp.com/" target="_blank">Palate</a></h3>
+                                <p class="summary">Palate is a mobile-first web app that provides a seamless platform for users to create wine tasting events and receive feedback about their tasting ability. Built with: Ruby on Rails, jQuery, ActiveRecord, and PostgreSQL.</p>
+                                <div class="featured-image">
+                                    <a href="http://thepalate.herokuapp.com/" target="_blank">
+                                    <img class="img-responsive project-image" src="assets/images/projects/palate.png" alt="Palate" />
+                                    </a>                 
+                            </div><!--//item-->
+                            <hr class="divider" />
+                            <div class="item row">
+                                <a class="col-md-4 col-sm-4 col-xs-12" href="http://babel-code.herokuapp.com/" target="_blank">
+                                <img class="img-responsive project-image" src="assets/images/projects/babelcode.png" alt="Babel Code" />
+                                </a>
+                                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                    <h3 class="title"><a href="http://babel-code.herokuapp.com/" target="_blank">Babel Code<br>Share your code in your language and learn new languages from others!</a></h3>
+                                    <p>Babel Code is a web application that allows users to post snippets of code to receive open sourced code translations. Built with: Ruby on Rails, ActiveRecord, and PostgreSQL.</p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+                            
+                            <div class="item row">
+                                <a class="col-md-4 col-sm-4 col-xs-12" href="http://whysoserious.herokuapp.com/" target="_blank">
+                                <img class="img-responsive project-image" src="assets/images/projects/whysoserious.png" alt="Why So Serious?" />
+                                </a>
+                                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                    <h3 class="title"><a href="http://whysoserious.herokuapp.com/" target="_blank">Why So Serious?<br>Laugh and the world laughs with you!</a></h3>
+                                    <p>Why So Serious? is a joke app that combines user generated jokes with stock images to create a hilarious combination of text and graphics. Built with: Ruby, Sinatra, ActiveRecord, and PostgreSQL.</p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+                <section class="experience section">
+                    <div class="section-inner">
+                        <h2 class="heading">Previous Work Experience</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title">Substitute Teacher - <span class="place"><a href="http://dcps.dc.gov/portal/site/DCPS/">DC Public Schools</a> </span><span class="year">(October 2013 - present)</span></h3>
+                                <ul>
+                                	<li>carried out the main teacher's lesson plans in different subjects, grades, and schools throughout the DCPS system</li>
+                                	<li>as a long-term substitute, designed and taught lessons on post-Revolutionary War through Wounded Knee US History to 11th grade students</li>
+                                </ul>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">Floor Staff - <span class="place"><a href="http://www.landmarktheatres.com/market/WashingtonDC/BethesdaRowCinema.htm">Landmark Theatres</a></span> <span class="year">(August 2010 - March 2012)</span></h3>
+                                <ul>
+                                	<li>served customers a variety of concessions items (including barista duties) and maintained appropriate inventory</li>
+                                	<li>ensure quality environments in the cinemas</li>
+                                </ul>
+                            </div><!--//item-->
+                            
+                            <div class="item">
+                                <h3 class="title">Conference and Event Assistant - <span class="place"><a href="http://www.uvm.edu/~conf/">University of Vermont Conference and Event Services</a></span> <span class="year">(May 2009 - December 2009)</span></h3>
+                                <ul>
+                                	<li>helped set up and take down University-sponsored events</li>
+                                	<li>was responsible for housing arrangements for conferees staying on the University of Vermont campus over the summer and ensured their satisfaction during their stay</li>
+                                </ul>
+                            </div><!--//item-->
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+            </div><!--//primary-->
+            <div class="secondary col-md-4 col-sm-12 col-xs-12">
+                 <aside class="info aside section">
+                    <div class="section-inner">
+                        <h2 class="heading sr-only">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Washington, DC</li>
+                                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="mailto:kdmcclin@gmail.com?Subject=Hello" target="_top">kdmcclin@gmail.com</a></li>
+                                <li><i class="fa fa-link"></i><span class="sr-only">My Thoughts:</span><a href="blog-central.html">Blog Central</a></li>
+                            </ul>
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//aside-->
+                
+                <aside class="skills aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Skills</h2>
+                        <div class="content">
+                            <p class="intro">
+                              Dev Bootcamp's primary focus was on Ruby on Rails, though we also learned JavaScript, jQuery, HTML, CSS, and soft skills like pair programming.  I'm always looking to expand my knowledge and am currently focused on mobile responsive design.</p>
+                            <div class="skillset"> 
+                                <div class="item">
+                                    <h3 class="level-title">Ruby on Rails<span class="level-label">Pro</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="65%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">RSpec & Capybara<span class="level-label">Pro</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="65%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">Active Record<span class="level-label">Pro</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="75%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">HTML5, CSS3, SASS &amp; LESS<span class="level-label">Intermediate</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="50%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+
+                              <!--   <div class="item">
+                                    <h3 class="level-title">Javascript &amp; jQuery<span class="level-label">Novice</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="25%">
+                                        </div>                                      
+                                    </div> --><!--//level-bar-->                                 
+                                <!-- </div> --><!--//item-->
+                                
+                                <!-- <p><a class="more-link" href="#"><i class="fa fa-external-link"></i> More on Coderwall</a></p>  -->
+                            </div>              
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//section-->
+                
+                <!-- <aside class="testimonials aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Testimonials</h2>
+                        <div class="content">
+                            <div class="item">
+                                <blockquote class="quote">                                  
+                                    <p><i class="fa fa-quote-left"></i>James is an excellent software engineer and he is passionate about what he does. You can totally count on him to deliver your projects!</p>
+                                </blockquote>                
+                                <p class="source"><span class="name">Tim Adams</span><br /><span class="title">Curabitur commodo</span></p>                                                             
+                            </div> --><!--//item-->
+                            
+                          <!--   <p><a class="more-link" href="#"><i class="fa fa-external-link"></i> More on Linkedin</a></p> 
+                            
+                        </div> --><!--//content-->
+                   <!--  </div> --><!--//section-inner-->
+                <!-- </aside> --><!--//section-->
+                
+                <aside class="education aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Education</h2>
+                        <div class="content">
+                        		<div class="item">                      
+                                <h3 class="title"><i class="fa fa-graduation-cap"></i> Full-Stack Web Development</h3>
+                                <h4 class="university"><a href="http://devbootcamp.com/" target="_blank">Dev Bootcamp </a><span class="year">(2014)</span></h4>
+                            </div>
+                            <div class="item">                      
+                                <h3 class="title"><i class="fa fa-graduation-cap"></i> M.Ed. Secondary Education (Social Studies)</h3>
+                                <h4 class="university"><a href="http://www.gwu.edu/" target="_blank">The George Washington University </a><span class="year">(2012-2013)</span></h4>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fa fa-graduation-cap"></i> B.A. European Studies</h3>
+                                <h4 class="university"><a href="http://www.uvm.edu/" target="_blank">The University of Vermont </a><span class="year">(2006-2010)</span></h4>
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                            
+                <aside class="languages aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Languages</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li class="item">
+                                    <span class="title"><strong>English:</strong></span>
+                                    <span class="level">Native Speaker <br class="visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </span>
+                                </li><!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>French:</strong></span>
+                                    <span class="level">Professional Proficiency <br class="visible-sm visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i><!--  <i class="fa fa-star-half"></i> --></span>
+                                </li><!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>Spanish:</strong></span>
+                                    <span class="level">Elementary Proficiency <br class="visible-sm visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i></span>
+                                </li><!--//item-->
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                
+                <aside class="blog aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Latest Blog Posts</h2>
+                       	<p>Keep an eye out for future posts!</p>
+                        <!-- <div id="rss-feeds" class="content"> -->
+
+                        <!-- </div> --><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                
+                <aside class="list music aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Favorite coding music</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-headphones"></i> <a href="https://play.spotify.com/track/1vROvXC4RmWtmSW2ETIulU">Mary Chapin Carpenter - I Take My Chances</a></li>
+                                <li><i class="fa fa-headphones"></i> <a href="https://play.spotify.com/track/07VMMZovHOCL63L84BUIJl">Martina McBride - In the Basement</a></li>
+                                <li><i class="fa fa-headphones"></i> <a href="https://play.spotify.com/track/7MudcZZawiJoOeDmJRLbSm">Wildwood Valley Boys - North of the Carolinas</a></li>
+                                <li><i class="fa fa-headphones"></i> <a href="https://play.spotify.com/track/7lBWbHxNzZrjitPVUxUq1L">Cantus - Heleluyan</a></li>
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                
+                <!-- <aside class="list conferences aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Conferences</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-calendar"></i> <a href="https://developer.apple.com/wwdc/" target="_blank">WWDC 2014</a> (San Francisco)</li>
+                                <li><i class="fa fa-calendar"></i> <a href="http://hive.aigaseattle.org/">Hive</a> (Seattle)</li>
+                            </ul>
+                        </div> --><!--//content-->
+                    <!-- </div> --><!--//section-inner-->
+                <!-- </aside> --><!--//section-->
+            </div><!--//secondary-->    
+        </div><!--//row-->
+    </div><!--//masonry-->
+    
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+                <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">3rd Wave Media</a> for developers</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+ 
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>            
 </body>
-</html>
+</html> 
+

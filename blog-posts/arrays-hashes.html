@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+    <title>Katherine McClintic Web Development</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A little bit of me, a little bit of my work.">
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="../assets/plugins/font-awesome/css/font-awesome.css">
+    <!-- github acitivity css -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="../assets/css/styles.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+</head> 
+
+<body>
+    <!-- ******HEADER****** --> 
+    <header class="header">
+        <div class="container">                       
+            <img class="profile-image img-responsive pull-left" src="../assets/images/me.jpg" alt="Katherine McClintic" />
+            <div class="profile-content pull-left">
+                <h1 class="name">Katherine McClintic</h1>
+                <h2 class="desc">Web Developer</h2>   
+                <ul class="social list-inline">                 
+                    <li><a href="https://plus.google.com/u/0/102827255318006940193/"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/kdmcclin"><i class="fa fa-linkedin"></i></a></li>
+                    <li class="last-item"><a href="https://github.com/kdmcclin"><i class="fa fa-github-alt"></i></a></li>            
+                </ul> 
+            </div><!--//profile-->
+            <a class="btn btn-cta-primary pull-right" href="mailto:kdmcclin@gmail.com?Subject=Hello" target="_top"><i class="fa fa-paper-plane"></i> Email Me</a>              
+        </div><!--//container-->
+    </header><!--//header-->
+    
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-md-8 col-sm-12 col-xs-12">
+                <section class="about section">
+                    <div class="section-inner">
+                        <h2 class="heading">Arrays and Hashes</h2>
+                        <div class="content">
+                            <h3>What are they and when should I use them?</h3>
+                            <p>Arrays and hashes are two ways that Ruby has of collecting and storing data. This blog post will examine them individual and provide some guidance about deciding which one to use.</p>
+                            <h4>Arrays</h4>
+                            <p>Arrays are used to store a list of values, whether numbers or not.  Each element in the array has what is called an index, which functions as a key to that particular element.  The first element is assigned: 0, the next: 1, and so on.</p>
+                            <img class="img-responsive project-image" src="../assets/images/blog-images/vegetablearray.png" alt="Vegetable Array">
+                            <p>You can create an array using literal notation, used above, and array constructor notation, demonstrated below.</p>
+                            <img class="img-responsive project-image" src="../assets/images/blog-images/arrayconstructor.png" alt="Array Constructor">
+                            <h4>Hashes</h4>
+                            <p>A hash is a collection of key-value pairs.  Each key is unique and is associated with a value.  These values can be repeated so that different keys share the same value, but keys cannot be duplicated.</p>
+                            <img class="img-responsive project-image" src="../assets/images/blog-images/vegetablehash.png" alt="Vegetable Hash">
+                            <p>The two most common ways of constructing hashes are hash literal notation, used above, and hash constructor notation, demonstrated below.</p>
+                            <img class="img-responsive project-image" src="../assets/images/blog-images/hashconstructor.png" alt="Hash Constructor">
+                            <h4>How to Choose</h4>
+                            <p>Arrays are good for storing values when the key is not important.  It's also more efficient to access array elements.  Hashes on the other hand are a bit more flexible.  The deciding factor in determining which one to use is to figure out if your data needs two specific values bound together (as in hashes), or if just a list of values is fine (as in arrays.)</p>
+                            <img class="img-responsive project-image" src="../assets/images/blog-images/grades1.png" alt="Grades Array and Hash">
+                            <p>Hashes and arrays can be used in a much more complex manner than discussed here, but hopefully this has been a useful introduction into how to use the two.</p>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+            </div><!--//primary-->
+            <div class="secondary col-md-4 col-sm-12 col-xs-12">
+                 <aside class="info aside section">
+                    <div class="section-inner">
+                        <h2 class="heading sr-only">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Washington, DC</li>
+                                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="mailto:kdmcclin@gmail.com?Subject=Hello" target="_top">kdmcclin@gmail.com</a></li>
+                                <li><i class="fa fa-link"></i><span class="sr-only">Website:</span><a href="../index.html">Home</a></li>
+                                <li><i class="fa fa-link"></i><span class="sr-only">My Thoughts:</span><a href="../blog-central.html">Blog Central</a></li>
+                            </ul>
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//aside-->
+            </div><!--//secondary-->    
+        </div><!--//row-->
+    </div><!--//masonry-->
+    
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+                <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">3rd Wave Media</a> for developers</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+ 
+    <!-- Javascript -->          
+    <script type="text/javascript" src="../assets/plugins/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="../assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="../assets/js/main.js"></script>            
+</body>
+</html> 
