@@ -544,3 +544,8 @@ iframe {
   background-color: #3AAA64;
   border-color: #3AAA64;
 }
+
+.pagination > li > a,
+.pagination > li > span {
+  color: #3AAA64;
+}
