@@ -549,3 +549,12 @@ iframe {
 .pagination > li > span {
   color: #3AAA64;
 }
+
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  color: #297746;
+  background-color: #eee;
+  border-color: #ddd;
+}
