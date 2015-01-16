@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+    <title>Katherine McClintic Web Development</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A little bit of me, a little bit of my work.">
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="../assets/plugins/font-awesome/css/font-awesome.css">
+    <!-- github acitivity css -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="../assets/css/styles.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+</head> 
+
+<body>
+    <!-- ******HEADER****** --> 
+    <header class="header">
+        <div class="container">                       
+            <img class="profile-image img-responsive pull-left" src="../assets/images/me.jpg" alt="Katherine McClintic" />
+            <div class="profile-content pull-left">
+                <h1 class="name">Katherine McClintic</h1>
+                <h2 class="desc">Web Developer</h2>   
+                <ul class="social list-inline">                 
+                    <li><a href="https://plus.google.com/u/0/102827255318006940193/"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/kdmcclin"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://twitter.com/kdmcclin"><i class="fa fa-twitter"></i></a></li>
+                    <li class="last-item"><a href="https://github.com/kdmcclin"><i class="fa fa-github-alt"></i></a></li>            
+                </ul> 
+            </div><!--//profile-->
+            <a class="btn btn-cta-primary pull-right" href="mailto:kdmcclin@gmail.com?Subject=Hello" target="_top"><i class="fa fa-paper-plane"></i> Email Me</a>              
+        </div><!--//container-->
+    </header><!--//header-->
+    
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-md-8 col-sm-12 col-xs-12">
+                <section class="about section">
+                    <div class="section-inner">
+                        <h2 class="heading">Using Google Fonts with Foundation</h2>
+                        <div class="content">
+                            <h3>Because apparently this post doesn't exist on the internet</h3>
+                            <strong>Version note: this applies to Foundation 5 used with Rails.</strong>
+                            <p></p>
+                            <p>I'm going to go ahead and assume here that you've used the gem to install Foundation on your Rails project.  If you're having compatability issues with the newest update and sass-rails, check out <a href="http://stackoverflow.com/questions/27126235/sass-or-foundation-error-after-updating-rails-and-other-gems/27807138#27807138">this post</a> on Stack Overflow for a solution.</p>
+                            <p>So now you've got your shiny new Rails app ready for a little styling.  You want to use that awesome font you found on Google Fonts, or maybe several awesome fonts.  No judgement (well, maybe a little).  The problem is that you're not quite sure where to put it and how to use it, aside from the general HTML/CSS way.</p>
+                            <p><b>Step 1:</b><br>
+                                Find that font.  Go to the Google Font page where you'd normally copy the stylesheet link if this was CSS.  Click the @import button as seen in the image below with the sort-of-not-really arrow-shaped red line.  
+                                 <img class="img-responsive project-image" src="../assets/images/blog-images/clickimport.png" alt="Google Font Import Button">
+                            </p>
+                            <p><b>Step 2:</b><br>
+                                Copy that sucker.
+                                 <img class="img-responsive project-image" src="../assets/images/blog-images/copyfont.png" alt="Google Font Import Data">
+                            </p>
+                            <p><b>Step 3:</b><br>
+                                Go to your foundation_and_overrides.scss file.  Your file path should look pretty similar to mine, albeit with a different name.
+                                <img class="img-responsive project-image" src="../assets/images/blog-images/foundationoverrides.png" alt="Sublime Text Screenshot">
+                            </p>
+                            <p><b>Step 4:</b><br>
+                                Find somewhere good to paste that sucker in.  I put it in Global because I figured I'd be assigning a font variable (or two) that would apply globally to the project.
+                                <img class="img-responsive project-image" src="../assets/images/blog-images/fontglobal.png" alt="Sublime Text Screenshot">
+                            </p>
+                            <p><b>Step the 5th:</b><br>
+                                No pretty screenshot this time because it would be redundant.  See above.  Assign a variable to your different fonts so you can refer to them later.  You can probably come up with better names than google-font and google-font2.  You can probably find a better place to put it too, but hey, this works.
+                            </p>
+                            <p><b>Step 6:</b><br>
+                                So Katherine, how do I use these shiny new fonts?  Good question.  For your general body font change $body-font-family to the variable you assigned to your preferred font.  In this case it's Lato.
+                                <img class="img-responsive project-image" src="../assets/images/blog-images/bodyfont.png" alt="Sublime Text Screenshot">
+                                To change the font style of your header, change $header-font-family to the variable you assigned to your preferred font.  In this case it's Montserrat.
+                                <img class="img-responsive project-image" src="../assets/images/blog-images/headerfont.png" alt="Sublime Text Screenshot">
+                                <b><i>Note:</i></b> if you want to change the font weight (to make it bold for instance), you need to uncomment out the default font weight lines which should be just below the $font-family stuff in the c. Global section of your foundation_and_overrides.scss file.
+                            </p>
+                            <p>Hope this helps somebody.  If you've got suggestions for improvement, please drop me a line through any of the contact methods on this site.</p>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+            </div><!--//primary-->
+            <div class="secondary col-md-4 col-sm-12 col-xs-12">
+                 <aside class="info aside section">
+                    <div class="section-inner">
+                        <h2 class="heading sr-only">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Washington, DC</li>
+                                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="mailto:kdmcclin@gmail.com?Subject=Hello" target="_top">kdmcclin@gmail.com</a></li>
+                                <li><i class="fa fa-link"></i><span class="sr-only">Website:</span><a href="http://kdmcclin.github.io/">Home</a></li>
+                                <li><i class="fa fa-link"></i><span class="sr-only">My Thoughts:</span><a href="../blog-central.html">Blog Central</a></li>
+                            </ul>
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//aside-->
+            </div><!--//secondary-->    
+        </div><!--//row-->
+    </div><!--//masonry-->
+    
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+                <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">3rd Wave Media</a> for developers</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+ 
+    <!-- Javascript -->          
+    <script type="text/javascript" src="../assets/plugins/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="../assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="../assets/js/main.js"></script>            
+</body>
+</html> 
