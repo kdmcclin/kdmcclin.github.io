@@ -57,6 +57,9 @@
                         <h2 class="heading">Running Ruby Scripts with DOSKEY</h2>
                         <div class="content">
                             <h3>Sometimes Developing on Windows is Hard</h3>
+                            <p>In a very general sense one creates a temporary DOSKEY macro (similar to an alias) using the following syntax.</p><br>
+                            <code>DOSKEY (command)=(thing you want it to do)</code><br>
+                            <p>You then run it by calling the command you named.  For more examples and more complex things that you can do, check out the post <a href="https://4sysops.com/archives/using-doskey-aliases/" target="_blank">here</a>.  It's not great, but there aren't too many great examples out there.</p>
                             <p>Let’s say you want to run a ruby script a bunch of times, but you want to do so temporarily (no permanent changes/aliasing).  As long as you’re within the same command session it’s pretty simple, but there are a couple of things to watch out for.<br><br>If your script involves ARGV in some way, you have to include that in your macro definition.  The following will not work to display/run whatever’s triggered by a user’s question command:</p><br>
                             <code>DOSKEY roll=ruby file_name.rb</code><br>
                             <code>roll question</code><br><br>
