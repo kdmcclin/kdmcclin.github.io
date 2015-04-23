@@ -566,3 +566,15 @@ iframe {
   margin-top: 10px;
   font-size: 1.1em;
 }
+
+.left-photo{
+  float: left;
+}
+
+.right-photo{
+  float: right;
+}
+
+.photo-wrapper .section-inner{
+  height: 1383px;
+}
