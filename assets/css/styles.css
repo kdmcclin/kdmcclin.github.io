@@ -559,3 +559,10 @@ iframe {
   background-color: #eee;
   border-color: #ddd;
 }
+
+.caption{
+  /*text-align: center;*/
+  font-style: italic;
+  margin-top: 10px;
+  font-size: 1.1em;
+}
