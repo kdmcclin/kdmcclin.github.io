@@ -525,6 +525,9 @@ iframe {
   .project-image {
     margin-bottom: 15px;
   }
+  .photo-wrapper .section-inner{
+    background: none;
+  }
 }
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
@@ -533,6 +536,12 @@ iframe {
 @media (min-width: 1400px) {
   .container {
     width: 1360px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .photo-wrapper .section-inner{
+    background: none;
   }
 }
 
