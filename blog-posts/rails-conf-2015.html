@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+    <title>RailsConf 2015</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reflections on what I saw and learned at RailsConf 2015.">
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="../assets/plugins/font-awesome/css/font-awesome.css">
+    <!-- github acitivity css -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="../assets/css/styles.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+</head> 
+
+<body>
+    <!-- ******HEADER****** --> 
+    <header class="header">
+        <div class="container">                       
+            <img class="profile-image img-responsive pull-left" src="../assets/images/me.jpg" alt="Katherine McClintic" />
+            <div class="profile-content pull-left">
+                <h1 class="name">Katherine McClintic</h1>
+                <h2 class="desc">Web Developer</h2>   
+                <ul class="social list-inline">                 
+                    <li><a href="https://plus.google.com/u/0/102827255318006940193/"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/kdmcclin"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://twitter.com/scarletalphabet"><i class="fa fa-twitter"></i></a></li>
+                    <li class="last-item"><a href="https://github.com/kdmcclin"><i class="fa fa-github-alt"></i></a></li>            
+                </ul> 
+            </div><!--//profile-->
+            <a class="btn btn-cta-primary pull-right" href="mailto:kdmcclin@gmail.com?Subject=Hello" target="_top"><i class="fa fa-paper-plane"></i> Email Me</a>              
+        </div><!--//container-->
+    </header><!--//header-->
+    
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-md-8 col-sm-12 col-xs-12">
+                <section class="about section">
+                    <div class="section-inner">
+                        <h2 class="heading">RailsConf 2015</h2>
+                        <h5>4/29/2015</h5>
+                        <div class="content">
+                            <h3>Reflections on my first RailsConf</h3>
+                            <h3 style="color:#3c3c3c">Day 1</h3><hr>
+                            <h4>DHH's Opening Keynote</h4>
+                            <p>How awesome was it to hear the creator of Rails talk about how it is evolving and changing, particularly in response to some issues that people in the community have had? Maybe the new version of turbolinks in Rails 5 won't be much more well received, but the effort to change is good.</p>
+                            <p>His talk will be online soon enough for your own viewing pleasure, but I had a few reactions to it.  He talked about the purpose of Rails being composed of integrated systems (or monoliths) was done with great intention.  It gives people or small groups the ability to launch an app and have an immediate impact, obviating the need for a massive team to manage all the parts before you can be successful.  I find it interesting that Rails is built for this kind of self-reliance, yet has a great community around it.  Maybe the community in the DC area is just great?  Maybe the community aspect has sprung up out of a desire (conscious or otherwise) to balance that self-reliance?  Maybe it's a large community of self-reliant smaller groups so that averages out?  Regardless, I found that striking.</p>
+                            <p>Other amusing nuggets from DHH: “client-side mvc” whispered like it's a dirty word (well, phrase I suppose) and "If we don't have toys, we're just adults."</p>
+                            <h4>Lillie Chilen on sustainable open source</h4>
+                            <p>Even though this talk was aimed more at creators/sustainers of open source, it was interesting.  I think her point about not feeling guilty for walking away from being a contributor to a project you've been working on is a great thing to remember for other aspects of life.  You can only give so much, and if you're burnt out the project isn't going to get your best work anyhow.  Her tips for maintainers:</p>
+                            <ul>
+                                <li>Respond to PRs within 7 days or the chance of someone returning to fix it diminishes exponentially. </li>
+                                <li>Documentation, project management & recruiting contributors are the 3 ways to increase support & end burnout in open source.</li>
+                                <li>Celebrate people's contributions regularly.</li>
+                                <li>Mozilla found that showing people the next bug they can work on increases the chance that they contribute again.</li>
+                            </ul>
+                            <h4>Sam Phippen—Rails Test Types in Rspec</h4>
+                            <p>I love writing tests.  Love it.  Do I do it enough?  No.  Am I super advanced at it?  No.  Love it anyhow.  I don't know why.  So I was excited for this talk.</p>
+                            <p>Sam pointed out that while comments might seem like a good idea at first to explain code to future people (how it works or is supposed to), comments lie—either they never were accurate or changes make it no longer apply.  So you need to test.</p>
+                            <p>The three main Rails test types are: model, controller, and feature.  I've always been a little confused at what differentiates a controller and a feature test (or set of them), but he pointed out that features testing is used to do the outside part of the outside-in testing cycle (browser level).  You write it as a user would describe what they're doing/seeing (click sign in link, fill out form, press submit, etc.).</p>
+                            <p>Sam also had a good tip about moving things out of the controller that don't really need to be there.  He suggested that when you see an ActiveRecord scope in the controller, it's often a good idea to push it into the model like so:</p>
+                            <code>def self.some_method where(:feature => thing)</code><br><br>
+                            <p>The lasting soundbyte of the session: “Sweet tea tastes like sugar and the apocalypse.”</p>
+                            <h4>Courteney Ervin on Open Source Contributions</h4>
+                            <p>I was excited for this talk partially because Courteney was one of my Rails teachers, but also because I've always wondered where to start with contributing to open source.  Here are a few places that she suggested to look:</p>
+                            <ul>
+                                <li>CodeMontage</li>
+                                <li>OpenHatch</li>
+                                <li>GitRec (matches work you've done already to similar open source projects)</li>
+                                <li>CodeTriage</li>
+                                <li>Contribulator</li>
+                                <li>24 Pull Requests</li>
+                            </ul>
+                            <p>Her suggested workflow for open source work:</p>
+                            <ul>
+                                <li>fork + git clone</li>
+                                <li>git remote (set a remote for the main version of the project)</li>
+                                <li>git branch (name it relevant to your code)</li>
+                                <li>git commit</li>
+                                <li>git push</li>
+                                <li>git pull & rebase (as you continue to work on it)</li>
+                            </ul>
+                            <p>In your pull request she said that you should list in detail the changes that you made (makes it easier for project maintainers to find and approve), if you make front end changes take screenshots (so they don't have to run it to see the changes), and and specifically say that you're open to feedback on your code (you can improve greatly this way).  Feel free to connect with her on twitter (<a href="https://twitter.com/courteneyervin" target="_blank">@courteneyervin</a>) if you've got questions.  I can't recall her email right now.  Her slides for the talk can also be found <a href="https://speakerdeck.com/courte/level-up-with-oss" target="_blank">online.</a></p>
+                            <h3 style="color:#3c3c3c">Day 2</h3><hr>
+                            <h4>Kerri Miller on hiring</h4>
+                            <p>I got here with about 10 minutes left in this talk because I had to go to the dentist in the morning because I broke a tooth (on an almond of all things) the day before.  Bummer.  But she did make a good point in those final minutes.  Whiteboard interviews are artificial. You can't look anything up.  Here's her twitter: <a href="https://twitter.com/kerrizor" target="_blank">@kerrizor</a>.</p>
+                            <h4>Bree Thomas on moving fast as a new dev</h4>
+                            <p>“Working hard, being passionate, and being committed do not necessarily add up to an ability to move at a fast speed.”  What a great point.  For coding and for life.</p>
+                            <p>These are the assumptions about apprentices that employers make:</p>
+                            <ul>
+                                <li>assume apprentices will be vocal and open</li>
+                                <li>seniors are well equipped to teach juniors</li>
+                            </ul>
+                            <p>These are the assumptions of themselves and their career that apprentices make:</p>
+                            <ul>
+                                <li>immediately employable and well compensated</li>
+                                <li>they are nothing like an apprentice (as in other fields, in history, etc.)</li>
+                                <li>transitions between levels are well defined (apprentice—junior dev—senior dev)</li>
+                            </ul>
+                            <p>There need to be good measurements of apprenticeships.  The idea that one size fits all is not true.  Hard coding skills are important but should not be the only thing devs are evaluated on.  It's also really important to follow through on saying you're going to measure and evaluate.</p>
+                            <p>“So few apprenticeships are structured for long-term commitment.”  Why put in work on apprentices if they're only going to be there for a few months?   Makes sense in a way.  But if you want apprentices to be there long-term, if they prove themselves that is, then structure it for that.  Even if they get a job elsewhere, it's only going to benefit the wider tech community.</p>
+                            <h4>Noel Rappin on Rspec</h4>
+                            <a href="https://speakerdeck.com/noelrap/rspec-it-isnt-actually-magic" target="_blank">The slides for the talk.</a>
+                            <p>I didn't take notes on this one because I was too busy paying attention to the presentation.  He dug into why Rspec does what it does and how you can take advantage of it.  I highly recommend checking out the recording of this talk if that's something you're interested in.</p>
+                            <h4>And now for something completely different...</h4>
+                            <img class="img-responsive project-image" src="../assets/images/blog-images/railsconfshirts.jpg" alt="Tshirt Sizes">
+                            <p>A brief interlude in this long post for this picture of the t-shirt lines.  How do you know you're in tech?  When the sizes are: small, medium, large, xl and xxl, and women's.</p>
+                        <h4>Sandi Metz at Women Who Code</h4>
+                        <p>This was easily the best part of the conference.  I got to share an Uber with Sandi Metz.  I was heading out of the conference place to hop on MARTA to get to an event being held by Women Who Code Atlanta (with my WWC shirt on) when I passed Sandi Metz and another person.  We talked about how the second you learn how to do any kind of programming or tech-related thing, you're instantly the person people ask for every kind of technical help possible.  "Hey how do you do ________ ?"  "Can you fix my _________?"  So true.</p>
+                        <p>Some advice that she passed on:</p>
+                        <ul>
+                            <li>Think about the acronym that your book's going to be.  POODR could've been worse.</li>
+                            <li>If you keep yourself from doing things because there are some people in the world who know more, you will never do anything.</li>
+                            <li>If you have 2 bikes, you duplicate the code. If you have 3, then you start to abstract. (Speaking about when you use subclasses and other abstractions become necessary.)</li>
+                        </ul>
+                        <p>While understandably very busy, she's very approachable.  Someone asked a question about being nervous to do your first talk at a conference, and she said that she's willing to do a Google Hangout with anyone nervous first timers preparing a talk to walk through it with them, give pointers, or just be a test audience.</p>
+                        <p>I think the thing that stuck with me the most was that she was finally convinced to write POODR when she realized that there were no Ruby books written by women.  Wow.  Representation matters.  To highlight it, one of the students in the Rails Engineering class that I TA-ed for at The Iron Yard said that when she was trying what kind of programming she wanted to learn, she saw Ruby (and Rails) and that it it had a woman presenting at a local meetup (I don't know who this was), and a woman who'd written a seminal work in the field (Sandi Metz).  She's a great programmer already and I can only imagine what she'll do in the future because she saw people like her in the Ruby/Rails community.  It can sound a little trite sometimes, but I'll say it again because it's true: <strong>representation matters</strong>.</p>
+                        <h3 style="color:#3c3c3c">Day 3</h3><hr>
+                        <p>I look fewer and fewer notes as the conference wore on because I realized that taking notes drew my attention away from the talks.  I can always watch the videos again.</p>
+                        <h4>Steve Kinney on JavaScript</h4>
+                        <a href="https://twitter.com/stevekinney" target="_blank">@stevekinney</a><br>
+                        <p>This was a great talk.  It's definitely one that I'm going to rewatch and really try to incorporate into my work.</p>
+                        <p>new keyword “let”</p>
+                        <ul>
+                            <li>“Let pretty much does what you think it's going to do.  Which is pretty amazing for JavaScript.”</li>
+                            <li>“let: it's like var but it does the thing you think it's going to do.”</li>
+                        </ul>
+                        <p>template strings instead of string concatenation</p>
+                        <ul>
+                            <li>uses backticks <code>``</code></li>
+                            <li>used for string interpolation <code>`${}`</code></li>
+                        </ul>
+                        <p>arrow functions</p>
+                        <ul>
+                            <li><code>const add = (a, b) => a + b;</code></li>
+                            <li>lexically bind the current scope to this</li>
+                        </ul>
+                        <h4>Michael Chan and ReactJS</h4>
+                        <p>Talk to Michael Chan if you watch his talk and want to learn more.  <a href="https://twitter.com/chantastic" target="_blank">@chantastic</a></p>
+                        <h4>Sidenote</h4>
+                        <p>It was about this time that I turned to my friend next to me, a guy who's been in tech for many years, and asked him how to spell Hedy Lamarr's name.  Namely, did it have one 'r' or two?  He looks at me, utter confusion on his face, and asks who she is.  I thought he was joking so I just kind of looked at him blankly.  Oh he's serious?  I'm going to refer you to her <a href="http://en.wikipedia.org/wiki/Hedy_Lamarr#Early_inventions" target="_blank">wikipedia page</a> because her official biography website is sadly lacking in information for some reason.  I can't do her justice in this blog post.</p>
+                        <h4>Sandi Metz talk “Nothing is Something”</h4>
+                        <p>She talked a little bit about this at the Women Who Code event the previous night and I prepared for it to be amazing, but it was mind blowing in a way that I didn't expect.  The main point was that “If is an enabler that prevents you from learning OO and using the power of objects.”  A few highlights (I will definitely be rewatching the video):</p>
+                        <ul>
+                            <li>If you send it a message, nil is something.  It's like some kind of offshoot of a Schrodinger OO rule. As soon as you think of it, it exists. </li>
+                            <li>Inheritance is for specialization.  It is not for sharing code.</li>
+                            <li>You're done checking for nil.  Stop it right now.</li>
+                        </ul>
+                        <p>I don't know how much I'll incoporate into my code, especially right away, but I really like her ideas here.  Even though I do also like my if statements.</p>
+                        <h4>Kent Beck's closing keynote</h4>
+                        <p>I didn't take particular notes on this because I wanted to absorb it more, so here are a few soundbites and mini-reflections:</p>
+                        <ul>
+                            <li>"Consciously encourage your own ideas." </li>
+                            <li>On software process: "If it helps, do it. If it doesn't help, stop doing it." </li>
+                            <li>Making public commitments to shared goals & measuring their accuracy sounds great for community organizations too.</li>
+                        </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+            </div><!--//primary-->
+            <div class="secondary col-md-4 col-sm-12 col-xs-12">
+                 <aside class="info aside section">
+                    <div class="section-inner">
+                        <h2 class="heading sr-only">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Washington, DC</li>
+                                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="mailto:kdmcclin@gmail.com?Subject=About Your Website" target="_top">kdmcclin@gmail.com</a></li>
+                                <li><i class="fa fa-cloud-download"></i><a href="mcclintic-e-resume.pdf">My Resume</a></li>
+                                <li><i class="fa fa-link"></i><span class="sr-only">Website:</span><a href="http://kdmcclin.github.io/">Home</a></li>
+                                <li><i class="fa fa-link"></i><span class="sr-only">My Thoughts:</span><a href="../blog-central.html">Blog Central</a></li>
+                                <li><i class="fa fa-photo"></i><a href="gallery.html">Gallery</a></li>
+                            </ul>
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//aside-->
+            </div><!--//secondary-->    
+        </div><!--//row-->
+    </div><!--//masonry-->
+    
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+            <a onclick="scroll(0,0)">Top</a><br>
+                <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">3rd Wave Media</a> for developers</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+ 
+    <!-- Javascript -->          
+    <script type="text/javascript" src="../assets/plugins/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="../assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="../assets/js/main.js"></script>            
+</body>
+</html> 
