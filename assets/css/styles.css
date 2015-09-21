@@ -587,3 +587,10 @@ iframe {
 .photo-wrapper .section-inner{
   height: 1383px;
 }
+
+.legal-notice {
+  margin-top: 10px;
+  font-size: .8em;
+  font-weight: bold;
+  font-style: oblique;
+}
