@@ -594,3 +594,8 @@ iframe {
   font-weight: bold;
   font-style: oblique;
 }
+
+.tbd {
+  color: grey;
+  font-size: 10px;
+}
